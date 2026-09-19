@@ -15,7 +15,7 @@ def get_db():
 
 @app.route("/")
 def home():
-    return render_template("login.html")
+    return "<h1>TEAM A is working!</h1><p>Flask deployment successful.</p>"
 
 
 @app.route("/login", methods=["POST"])
