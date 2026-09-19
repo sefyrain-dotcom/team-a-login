@@ -36,10 +36,6 @@ def login():
         return f"<h1>Welcome, {user['name']}!</h1><p>Login successful.</p>"
     else:
         return "<h2>Invalid email or password</h2><a href='/'>Go Back</a>"
-
-@app.route("/")
-def home():
-    return "<h1>TEAM A is working!</h1><p>Flask deployment successful.</p>"
     
 @app.route("/create", methods=["POST"])
 def create():
